@@ -1,6 +1,6 @@
-language: python
-python:
-    - "3.8"
+language: node
+node_js:
+    - 12
 
 install:
     - npm install -g serverless
