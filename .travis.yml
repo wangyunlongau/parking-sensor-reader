@@ -1,1 +1,17 @@
 language: python
+python:
+    - "3.8"
+
+install:
+    - npm install -g serverless
+script:
+    - serverless deploy
+
+jobs:
+  include:
+    - name: "Deploy"
+      if: type = push AND branch = main
+      env:
+        - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+        - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+
