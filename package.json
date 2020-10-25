@@ -1,0 +1,19 @@
+{
+  "name": "parking-sensor-reader",
+  "version": "1.0.0",
+  "description": "Periodically poll parking sensor data in Melbourne City",
+  "main": "handler.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wangyunlongau/parking-sensor-reader.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

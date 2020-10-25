@@ -4,6 +4,7 @@ node_js:
 
 install:
     - npm install -g serverless
+    - npm install
 script:
     - serverless deploy
 

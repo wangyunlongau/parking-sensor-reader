@@ -50,13 +50,15 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
+# package:
 #  include:
 #    - include-me.js
 #    - include-me-dir/**
 #  exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**
+
+# plugins:
 
 functions:
   reader:
@@ -70,7 +72,7 @@ functions:
 #    Check the event documentation for details
     events:
       - schedule:
-          rate: rate(1 day)
+          rate: rate(15 minutes)
 #      - http:
 #          path: users/create
 #          method: get

@@ -1,18 +1,8 @@
-'use strict';
+"use strict";
+const fetch = require("node-fetch");
 
-module.exports.read = async event => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
+module.exports.read = function (event, context, callback) {
+  fetch("https://data.melbourne.vic.gov.au/resource/vh2v-4nfs.json?$limit=1")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
 };
