@@ -4,6 +4,7 @@
   "description": "Periodically poll parking sensor data in Melbourne City",
   "main": "handler.js",
   "dependencies": {
+    "@elastic/elasticsearch": "^7.9.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
